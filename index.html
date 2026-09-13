@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task fow | Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-container">
+        <header>
+            <h1>Task flow</h1>
+            <p>Organize suas metas dárias com facilidade</p>
+        </header>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Digiti uma nova tarefa..." autocomplete="off" required>
+            <button type="submit" id="add-btn">Adicionar</button>
+        </form>
+
+        <section class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="pending">Pendentes</button>
+            <button class="filter-btn" data-filter="completed">Concluidas</button>
+        </section>
+
+        <ul id="task-list"></ul>
+
+        <footer>
+            <span id="task-counter">0 tarefas pendentes</span>
+            <button id="clear-all-btn">Limpar concluidas</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
